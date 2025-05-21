@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header {
+            background-color: #222;
+            color: aliceblue;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .branding {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .branding h1 {
+            margin: 0;
+            font-size: 1.5rem
+        }
+
+        .branding p {
+            margin: 0;
+            font-size: .8rem;
+            color: #ccc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a :hover {
+            color: #00bcd4;
+        }
+
+        @media (max-width:600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+        }
+
+        section#about {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        section#about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section#about p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #333;
+
+        }
+
+        section#skills {
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        section#skills h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #0077b6;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 1.5rem;
+            color: #333;
+        }
+
+        ul li {
+            margin-bottom: 0.3rem;
+        }
+
+        section#projects {
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        section#projects h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid #0077b6;
+            background-color: #fff;
+        }
+
+        .project h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .project p {
+            margin: 0.3rem 0;
+            color: #333;
+        }
+
+
+        .project a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        section#education {
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        section#education h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .edu-item {
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #0077b6;
+            padding-left: 1rem;
+        }
+
+        .edu-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #0077b6;
+        }
+
+
+        .edu-item p {
+            margin: 0.3rem 0;
+            color: #333;
+        }
+
+        section#contact {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        section#contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+
+        .contact-info a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.3rem 0;
+        }
+
+        footer .quote {
+            font-style: italic;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <h1>Shahid Nabi</h1>
+            <p>Aspiring Web Developer</p>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Shahid Nabi, a passionate front-end web developer dedicated to crafting engaging and
+            responsive
+            websites. I enjoy turning creative ideas into reality through clean and efficient code.</p>
+        <p>I hold a Bachelor's degree in Computer Science Engineering from Punjab Technical University.</p>
+        <p>When I'm not coding, I love exploring the mountains and capturing landscapes through photography—it helps
+            me
+            recharge and stay inspired.</p>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-category">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript, React.js</li>
+                <li>Python, Django Framework</li>
+                <li>C++, Git, GitHub</li>
+                <li>Flutter, Dart</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Design (Figma)</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Teamwork and Collaboration</li>
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+                <li>Attention to Detail</li>
+                <li>Strong Communication</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>The Tour Squart</h3>
+            <p>A dynamic tour booking website for planning and managing travel packages.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Django, Bootstrap</p>
+            <p><a href="https://github.com/shahidnabi/the-tour-squart" target="_blank">View on GitHub</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Travel with Friends</h3>
+            <p>A simple and responsive travel companion website for trip coordination among friends.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Django</p>
+            <p><a href="https://github.com/shahidnabi/travel-with-friends" target="_blank">View on GitHub</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A basic weather application that fetches real-time data using an API.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, OpenWeatherMap API</p>
+            <p><a href="https://github.com/shahidnabi/weather-app" target="_blank">View on GitHub</a></p>
+        </div>
+    </section>
+
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="edu-item">
+            <h3>Punjab Technical University</h3>
+            <p>Bachelor of Technology in Computer Science Engineering</p>
+            <p>2018 – 2022</p>
+        </div>
+
+        <div class="edu-item">
+            <h3>Govt. Higher Secondary School, Srinagar</h3>
+            <p>Senior Secondary (Science Stream)</p>
+            <p>2016 – 2018</p>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:shahidnabi.dev@gmail.com">shahidnabi.dev@gmail.com</a></p>
+            <p>Phone: +91-9876543210</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/shahidnabi" target="_blank">linkedin.com/in/shahidnabi</a></p>
+            <p>GitHub: <a href="https://github.com/shahidnabi" target="_blank">github.com/shahidnabi</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shahid Nabi. All rights reserved.</p>
+        <p class="quote">"Code is like humor. When you have to explain it, it’s bad."</p>
+    </footer>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

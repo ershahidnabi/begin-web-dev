@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    position: sticky;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-group li {
+    list-style: none;
+    position: relative;
+}
+
+.nav-group li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    background-color: transparent;
+}
+
+.nav-group li:hover {
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 160px;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.search-icon a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.search-icon:hover {
+    background-color: red !important;
+}
+
+.hero-section {
+    width: 100%;
+    height: 90vh;
+    background: url("/images/chicago.jpg") no-repeat center center/cover;
+}
+
+.overflow {
+    background-color: #00000055;
+    color: aliceblue;
+    width: 30%;
+    line-height: 3;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    top: 450px;
+    left: 500px;
+}
+
+.about {
+    width: 75%;
+    /* background-color: #000; */
+    /* color: #fff; */
+    margin: auto;
+    padding: 50px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.p-italics {
+    padding: 20px 5px;
+    font-size: small;
+    font-style: italic;
+    color: #555;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 25px 0;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes img {
+    width: 65%;
+    object-fit: contain;
+    margin-top: 15px;
+}
+
+.tour-dates {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.tour-intro {
+    width: 75%;
+    margin: 0 auto;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-container {
+    width: 75%;
+    margin: auto;
+    padding: 5px 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.month {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #292828a6;
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.month p {
+    padding: 5px;
+}
+
+p .m-name {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+p .s-out {
+    background-color: orangered;
+    padding: 5px;
+    margin: 5px !important;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.circle {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 7px;
+    height: 25px;
+    width: 75px;
+    font-size: 10px;
+}
+
+.cards-container {
+    width: 75%;
+    margin: auto;
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    color: black;
+    width: 30%;
+}
+
+.card-head img {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.card-body h4 {
+    margin-bottom: 13px;
+    font-weight: 600;
+}
+
+.card-body .date {
+    margin-bottom: 13px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.card-body p {
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.card-body button {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 9px;
+}
+
+.contact-us {
+    width: 100%;
+}
+
+.contact-info {
+    width: 75%;
+    margin: auto;
+    padding: 5px 60px;
+    display: flex;
+}
+
+.details {
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-weight: 400;
+}
+
+.contact-icon {
+    font-size: 20px;
+}
+
+.form {
+    padding: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .f-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.f-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.f-btn button {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 9px;
+}
+
+.map {
+    width: 100%;
+}
+
+.map img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i {
+    font-size: 20px;
+    padding: 3px;
+    color: #555;
+    margin-bottom: 3px;
+}
