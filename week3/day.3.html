@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Adding a border to the div element */
+        .box {
+
+            background-color: black;
+            color: green;
+            width: 100%;
+            padding: 50px;
+        }
+
+        /* Media queries for different screen sizes */
+        /* less than is max  */
+        @media (max-width: 300px) {
+            .box {
+                color: green;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width:400px) {
+            .box {
+                color: #ffc0f9;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width:600px) {
+            .box {
+                color: red;
+            }
+        }
+
+        @media (min-width:600px) {
+            .box {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus harum iusto quasi
+        repellat excepturi hic enim tempore voluptatem, eos ex porro quo officiis ab, alias temporibus? Sit impedit
+        facilis saepe molestias! Facere ducimus perspiciatis ut modi id animi quas, repudiandae doloribus? Sed modi
+        labore facere in eius numquam reiciendis velit!</div>
+</body>
+
+</html>
