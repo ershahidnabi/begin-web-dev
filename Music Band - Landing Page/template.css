@@ -129,15 +129,18 @@ html {
 
 .box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 0 25px 0;
+    margin: 0 auto;
 }
 
 .boxes {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .boxes img {
@@ -212,14 +215,24 @@ p .s-out {
     width: 75%;
     margin: auto;
     padding: 5px 50px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     background-color: #fff;
     color: black;
     width: 30%;
+    margin: auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-head img {
@@ -262,15 +275,20 @@ p .s-out {
 .contact-info {
     width: 75%;
     margin: auto;
-    padding: 5px 60px;
+    padding: 5px 30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .details {
-    padding: 75px;
+    padding: 35px 25px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 400;
 }
 
@@ -279,24 +297,30 @@ p .s-out {
 }
 
 .form {
-    padding: 75px;
+    padding: 25px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 form .f-text {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 input {
+    width: 45%;
     padding: 10px;
     margin-bottom: 10px;
 }
 
 textarea {
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -327,6 +351,7 @@ footer {
     width: 100%;
     height: 200px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
     justify-content: center;
@@ -338,4 +363,10 @@ footer {
     padding: 3px;
     color: #555;
     margin-bottom: 3px;
+}
+
+@media (max-width: 999px) {
+    .overflow {
+        display: none;
+    }
 }

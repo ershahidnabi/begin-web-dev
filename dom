@@ -1,0 +1,58 @@
+1. What is the DOM, and how is it related to JavaScript?
+   Answer:
+   The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the structure of a webpage as a tree of objects, where each element, attribute, and piece of text is a node.
+
+JavaScript can interact with the DOM to:
+
+Read content (e.g., get the text of a paragraph)
+
+Modify structure (e.g., add or remove elements)
+
+Change styles or attributes (e.g., change color, class)
+
+Respond to events (e.g., clicks, typing)
+
+Example:
+document.getElementById("myDiv").style.color = "blue";
+
+2. How do you select an HTML element using JavaScript?
+   Answer:
+   JavaScript provides several methods to select DOM elements:
+
+<div id="myId" class="myClass">Hello</div>
+// By ID
+const el1 = document.getElementById("myId");
+
+// By class name (returns a collection)
+const el2 = document.getElementsByClassName("myClass");
+
+// By tag name
+const el3 = document.getElementsByTagName("div");
+
+// Using CSS selectors (returns the first match)
+const el4 = document.querySelector(".myClass");
+
+// Using CSS selectors (returns all matches)
+const el5 = document.querySelectorAll(".myClass");
+
+3. How can you create a new HTML element and add it to the page dynamically using JavaScript?
+   Answer:
+   You can use document.createElement() and appendChild() or append():
+   <ul id="myList"></ul>
+   // Create a new list item
+   const newItem = document.createElement("li");
+   newItem.textContent = "New list item";
+
+// Append it to the list
+document.getElementById("myList").appendChild(newItem);
+
+4. What are the differences between innerHTML, textContent, and innerText?
+   Answer:
+   Property==========Description===================================================Includes HTML? =====Affected by CSS?
+   innerHTML=========Gets/sets HTML content inside an element======================✅ Yes ============❌ No
+   textContent=======Gets/sets only text conten====================================❌ No =============❌ No
+   innerText=========Gets/sets visible text, considering styles (like display)=====❌ No =============✅ Yes
+
+example
+
+<div id="demo"><b>Hello</b> World</div>

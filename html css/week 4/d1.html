@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Day 1</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 200px 200px; */
+            /* grid-template-rows: 200px 200px 200px; */
+            /* grid-template-columns: 1fr 3fr 2fr; */
+            /* grid-template-columns: repeat(3, 50px); */
+            /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+            /* grid-gap: 40px; */
+            /* grid-auto-rows: 100px; */
+            /* grid-auto-columns: 100px; */
+            /* grid-auto-rows: minmax(100px, auto); */
+            /* column-gap: 20px; */
+            /* row-gap: 20px;  */
+        }
+
+        .box {
+            background-color: aqua;
+            border: 2px solid green;
+            border-radius: 3px;
+        }
+
+        .box2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+        <div class="box" id="box5">Box 5</div>
+    </div>
+</body>
+
+</html>

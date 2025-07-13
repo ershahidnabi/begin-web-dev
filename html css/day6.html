@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 -D6</title>
+    <style>
+        /* 
+        Transitions
+        transition-property        transition-duration    transition-timing-function        transition-delay ======= delay means when transition starts
+         */
+
+
+        /* transform  =   rotate, scale, translate, skew  */
+
+        /* 
+        animations
+        @keyframes className{}
+        */
+
+        .container {
+            background-color: blue;
+            width: 200px;
+            height: 100px;
+            /* transition: width 1s ease-in-out 2s; */
+            /* transition: background-color 1s ease-in-out 2s; */
+            transition: transform 1s ease-in-out 2s;
+
+        }
+
+        .container:hover {
+            /* width: 200px; */
+            /* background-color: red; */
+            /* transform: rotate(180deg); */
+            /* transform: translate(50px, 100px); */
+            /* transform: rotate(45deg) translate(150px, 100px); */
+            transform: skew(45deg);
+        }
+
+        .card {
+            width: 200px;
+            height: 100px;
+            background-color: #d84e4e;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(3, 0);
+        }
+
+        .spinner {
+            display: inline-block;
+            font-size: 40px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            /* background-color: #550c0c; */
+            border-radius: 50%;
+            border: 5px solid green;
+            border-top: 10px solid red;
+            animation: circle 2s linear infinite;
+        }
+
+        @keyframes circle {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container"></div>
+
+    <div class="spinner">C</div>
+
+    <div class="card">Hover Me</div>
+    <div class="circle"></div>
+
+</body>
+
+</html>

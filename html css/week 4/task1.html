@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 10px !important; */
+            grid-template-rows: 600px;
+            /* grid-template-columns: 1fr 3fr 2fr; */
+            /* grid-template-columns: repeat(3, 50px); */
+            /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+            /* grid-gap: 40px; */
+            /* grid-auto-rows: 100px; */
+            /* grid-auto-columns: 100px; */
+            /* grid-auto-rows: minmax(100px, auto); */
+            /* column-gap: 20px; */
+            /* row-gap: 20px;  */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            /* grid-gap: 20px; */
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        #item1 {
+            grid-column-start: 1;
+            grid-column-end: 8;
+            background-color: red;
+        }
+
+        #item2 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente nostrum
+            commodi iure fugiat ratione officia, nam deleniti nisi, aperiam iste aspernatur at nulla iusto.</div>
+        <div class="item" id="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente nostrum
+            commodi iure fugiat ratione officia, nam deleniti nisi, aperiam iste aspernatur at nulla iusto.</div>
+        <div class="item" id="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente nostrum
+            commodi iure fugiat ratione officia, nam deleniti nisi, aperiam iste aspernatur at nulla iusto.</div>
+        <div class="item" id="item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente nostrum
+            commodi iure fugiat ratione officia, nam deleniti nisi, aperiam iste aspernatur at nulla iusto.</div>
+        <div class="item" id="item5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente nostrum
+            commodi iure fugiat ratione officia, nam deleniti nisi, aperiam iste aspernatur at nulla iusto.</div>
+        <div class="item" id="item6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente nostrum
+            commodi iure fugiat ratione officia, nam deleniti nisi, aperiam iste aspernatur at nulla iusto.</div>
+    </div>
+</body>
+
+</html>

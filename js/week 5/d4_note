@@ -1,0 +1,96 @@
+// What will be the output of the following code? Explain why.
+
+//  js
+// CopyEdit
+// var x = 10;
+// if (true) {
+//   var x = 20;
+//   console.log(x);
+// }
+// console.log(x);
+
+// What will be the output?
+
+//  js
+// CopyEdit
+// let a = 5;
+// if (true) {
+//   let a = 10;
+//   console.log(a);
+// }
+// console.log(a);
+
+// Predict the error and fix it.
+
+//  js
+// CopyEdit
+// const b = 15;
+// b = 20;
+// console.log(b);
+
+// 🔁 2. Loops
+// Write a program to print all even numbers from 1 to 20 using a for loop.
+
+// Use a while loop to reverse the digits of a number (e.g., 123 → 321).
+
+// Write a program using nested loops to print the following pattern:
+
+//  markdown
+// CopyEdit
+// *
+// **
+// ***
+// ****
+
+// What will be the output?
+
+//  js
+// CopyEdit
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => console.log(i), 1000);
+// }
+
+// ⚖️ 3. if-else & switch
+// Write a program that takes a number and prints:
+
+// "Positive" if it's greater than 0
+
+// "Negative" if it's less than 0
+
+// "Zero" if it's 0
+
+// *Create a simple calculator using switch for two numbers and an operator (+, -, , /).
+
+// 🔢 4. Data types & Type Coercion
+// What is the output of this and why?
+
+//  js
+// CopyEdit
+// console.log('5' - 2);
+// console.log('5' + 2);
+
+// Check the type of each:
+
+//  js
+// CopyEdit
+// let a = "hello";
+// let b = 10;
+// let c = true;
+// let d = null;
+// let e;
+// let f = Symbol('id');
+// let g = BigInt(12345678901234567890n);
+// console.log(typeof a, typeof b, typeof c, typeof d, typeof e, typeof f, typeof g);
+
+// 🧮 5. Operators
+// What will be the output?
+
+//  js
+// CopyEdit
+// let x = 5;
+// x += 3 * 2;
+// console.log(x);
+
+// Write a function that checks if a number is divisible by both 3 and 5.
+
+// Use the ternary operator to return "Adult" if age >= 18, else "Minor".
